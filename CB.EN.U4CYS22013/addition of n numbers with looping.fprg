@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22013"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 11:00:35 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjAxMzsyMDIyMjNNQVlDMDA1MDsyMDIyLTEyLTAyOzA5OjEzOjM2IEFNOzMzMDg="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjAxMzsyMDIyMjNNQVlDMDA1MDsyMDIyLTEyLTAyOzExOjAwOjM1IEFNOzI7MzQwNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="&quot;This is the program of addition of first n number&quot;"/>
+            <comment text="&quot;Declare variables a,b,c&quot;"/>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <assign variable="a" expression="0"/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <assign variable="b" expression="1"/>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <output expression="&quot;Until which number do you want addition&quot;" newline="True"/>
+            <input variable="n"/>
+            <while expression="a&lt;=(n-2)">
+                <assign variable="a" expression="a+1"/>
+                <assign variable="b" expression="a+b"/>
+                <assign variable="c" expression="a+b"/>
+            </while>
+            <output expression="c" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
