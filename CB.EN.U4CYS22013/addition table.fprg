@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22013"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 10:33:36 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjAxMzsyMDIyMjNNQVlDMDA1MDsyMDIyLTEyLTAyOzEwOjE1OjE3IEFNOzMzMDE="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjAxMzsyMDIyMjNNQVlDMDA1MDsyMDIyLTEyLTAyOzEwOjMzOjM2IEFNOzE7MzQxMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Program for addition table of numbers from 1 to 10."/>
+            <comment text="DDeclaration of variables a, b, c."/>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <assign variable="b" expression="1"/>
+            <comment text="Asigning the value of b"/>
+            <while expression="b&lt;=10">
+                <output expression="&quot;the addition table for: &quot;&amp;b" newline="True"/>
+                <for variable="a" start="1" end="10" direction="inc" step="1">
+                    <assign variable="c" expression="a+b"/>
+                    <output expression="a&amp;&quot;+&quot;&amp;b&amp;&quot;=&quot;&amp;c" newline="True"/>
+                </for>
+                <assign variable="b" expression="b+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
