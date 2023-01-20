@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22013"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-20 11:08:08 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAxMzsyMDIyMjNNQVlDMDA2NjsyMDIzLTAxLTIwOzA5OjE3OjQwIEFNOzMwNTc="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAxMzsyMDIyMjNNQVlDMDA2NjsyMDIzLTAxLTIwOzExOjA4OjA4IEFNOzM7MzE2NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Bubble Sorting"/>
+            <declare name="i, n, j, y, userinput" type="Integer" array="False" size=""/>
+            <output expression="&quot;What is the length of the array ?&quot;" newline="True"/>
+            <comment text="Assigning the size of array"/>
+            <input variable="n"/>
+            <declare name="x" type="Integer" array="True" size="n"/>
+            <comment text="This loop is to declare the values of elements of array"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="&quot;What is the value of x[&quot;&amp;i&amp;&quot;]&quot;" newline="True"/>
+                <input variable="userinput"/>
+                <assign variable="x[i]" expression="userinput"/>
+            </for>
+            <comment text="This loop is to sort the elements"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <for variable="j" start="0" end="n-1-i-1" direction="inc" step="1">
+                    <comment text="Here the swapping takes place"/>
+                    <if expression="x[j]&gt;x[j+1]">
+                        <then>
+                            <assign variable="y" expression="x[j]"/>
+                            <assign variable="x[j]" expression="x[j+1]"/>
+                            <assign variable="x[j+1]" expression="y"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <comment text="Printing the sorted array"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="x[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
